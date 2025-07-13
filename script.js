@@ -1,4 +1,4 @@
-const cursos = [const cursos = [
+const cursos = [
   { nombre: "Matemática I", ciclo: 1, prerrequisitos: [] },
   { nombre: "Ciudadanía y reflexión ética", ciclo: 1, prerrequisitos: [] },
   { nombre: "Introducción a la Ingeniería Industrial", ciclo: 1, prerrequisitos: [] },
