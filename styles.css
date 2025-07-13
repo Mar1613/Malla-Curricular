@@ -1,41 +1,67 @@
-
 body {
-  font-family: sans-serif;
-  background-color: #f4f4f4;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff8fc;
   padding: 20px;
   text-align: center;
 }
+h1 {
+  color: #6a1b9a;
+}
+.ciclo-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  background: #fdfdff;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+.ciclo-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #6a1b9a;
+  margin-bottom: 10px;
+}
 .grid {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .curso {
-  background-color: #dff0d8;
-  padding: 15px;
+  background-color: #f8e8f0;
+  padding: 12px;
   border-radius: 10px;
-  width: 180px;
+  width: 220px;
+  margin: 5px 0;
   cursor: pointer;
   transition: 0.3s;
   opacity: 1;
   text-decoration: none;
-  border: 2px solid #4caf50;
+  border: 2px solid #f3c4e6;
 }
 .curso.bloqueado {
-  background-color: #eee;
-  color: #999;
-  border: 2px dashed #aaa;
+  background-color: #f0f0f0;
+  color: #aaa;
+  border: 2px dashed #ccc;
   opacity: 0.5;
   cursor: not-allowed;
 }
 .curso.tachado {
   text-decoration: line-through;
-  background-color: #c8e6c9;
-  border-color: #388e3c;
+  background-color: #d9f3f2;
+  border-color: #90cbc4;
 }
-h2 {
-  width: 100%;
-  margin-top: 30px;
-  color: #333;
+.ciclo-column:nth-child(3n+1) .curso {
+  background-color: #f8e8f0; /* rosado pastel */
+  border-color: #f3c4e6;
+}
+.ciclo-column:nth-child(3n+2) .curso {
+  background-color: #e6f3f9; /* celeste pastel */
+  border-color: #b2ddee;
+}
+.ciclo-column:nth-child(3n+3) .curso {
+  background-color: #f0e6fa; /* morado pastel */
+  border-color: #d1b3f0;
 }
