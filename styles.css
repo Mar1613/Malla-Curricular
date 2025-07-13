@@ -1,50 +1,41 @@
+
 body {
   font-family: sans-serif;
-  background: #f2f2f2;
-  margin: 20px;
+  background-color: #f4f4f4;
+  padding: 20px;
   text-align: center;
 }
-
 .grid {
   display: flex;
-  gap: 20px;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
 }
-
-.ciclo {
-  background: #fff;
-  border: 1px solid #ccc;
-  padding: 15px;
-  width: 200px;
-  border-radius: 10px;
-  box-shadow: 0 0 5px #aaa;
-}
-
 .curso {
-  background: #e0f7fa;
-  margin: 8px 0;
-  padding: 10px;
-  border-radius: 6px;
+  background-color: #dff0d8;
+  padding: 15px;
+  border-radius: 10px;
+  width: 180px;
   cursor: pointer;
   transition: 0.3s;
+  opacity: 1;
+  text-decoration: none;
+  border: 2px solid #4caf50;
 }
-
-.curso:hover {
-  background: #b2ebf2;
+.curso.bloqueado {
+  background-color: #eee;
+  color: #999;
+  border: 2px dashed #aaa;
+  opacity: 0.5;
+  cursor: not-allowed;
 }
-
-#infoCurso {
-  margin-top: 20px;
-  padding: 15px;
-  background: #fff;
-  border: 1px solid #ccc;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  display: none;
+.curso.tachado {
+  text-decoration: line-through;
+  background-color: #c8e6c9;
+  border-color: #388e3c;
 }
-
-.info-visible {
-  display: block;
+h2 {
+  width: 100%;
+  margin-top: 30px;
+  color: #333;
 }

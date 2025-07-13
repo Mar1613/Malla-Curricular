@@ -1,28 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Malla Curricular</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <title>Malla Curricular Interactiva</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Malla Curricular - Ingeniería Industrial</h1>
-  <div class="grid">
-    <div class="ciclo">
-      <h2>Ciclo 1</h2>
-      <div class="curso" onclick="mostrarInfo('Matemática Básica', 'MAT101', 4)">Matemática Básica</div>
-      <div class="curso" onclick="mostrarInfo('Introducción a la Ingeniería', 'ING101', 3)">Intro a la Ingeniería</div>
-    </div>
-    <div class="ciclo">
-      <h2>Ciclo 2</h2>
-      <div class="curso" onclick="mostrarInfo('Matemática II', 'MAT102', 4)">Matemática II</div>
-      <div class="curso" onclick="mostrarInfo('Programación I', 'PROG101', 3)">Programación I</div>
-    </div>
-  </div>
-
-  <div id="infoCurso" class="info-oculta"></div>
-
+  <h1>Malla Curricular Interactiva</h1>
+  <div id="malla" class="grid"></div>
   <script src="script.js"></script>
 </body>
 </html>
