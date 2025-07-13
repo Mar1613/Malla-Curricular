@@ -1,0 +1,50 @@
+body {
+  font-family: sans-serif;
+  background: #f2f2f2;
+  margin: 20px;
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ciclo {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #aaa;
+}
+
+.curso {
+  background: #e0f7fa;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.curso:hover {
+  background: #b2ebf2;
+}
+
+#infoCurso {
+  margin-top: 20px;
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #ccc;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+}
+
+.info-visible {
+  display: block;
+}
