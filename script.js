@@ -82,7 +82,6 @@ const cursos = [
 
 let completados = new Set();
 
-// Cargar progreso desde localStorage al iniciar
 function cargarProgreso() {
   const guardado = localStorage.getItem("cursosCompletados");
   if (guardado) {
@@ -94,7 +93,6 @@ function cargarProgreso() {
   }
 }
 
-// Guardar progreso en localStorage cada vez que se marca algo
 function guardarProgreso() {
   localStorage.setItem("cursosCompletados", JSON.stringify([...completados]));
 }
@@ -167,6 +165,5 @@ function actualizarDisponibilidad() {
   });
 }
 
-// Ejecutar funciones principales
 cargarProgreso();
 crearMalla();
